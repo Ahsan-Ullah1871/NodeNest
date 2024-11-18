@@ -14,8 +14,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.GetWhereConditions = void 0;
 const constant_1 = require("./constant");
 const GetWhereConditions = (filters) => {
+    if (!filters)
+        return {}; // Handle undefined or null filters early
     const { search } = filters, filterData = __rest(filters, ["search"]);
     const andConditions = [];
+    // Handle search conditions
     if (search) {
         andConditions.push({
             OR: constant_1.blogs_search_condition_keys.map((field) => ({
@@ -26,15 +29,17 @@ const GetWhereConditions = (filters) => {
             })),
         });
     }
-    if (Object.keys(filterData).length > 0) {
-        andConditions.push({
-            AND: Object.keys(filterData).map((key) => ({
-                [key]: {
-                    equals: filterData[key],
-                },
-            })),
-        });
+    // Handle other filter conditions
+    const filterKeys = Object.keys(filterData);
+    if (filterKeys.length > 0) {
+        const filterConditions = filterKeys.map((key) => ({
+            [key]: {
+                equals: filterData[key], // Ensure type safety
+            },
+        }));
+        andConditions.push({ AND: filterConditions });
     }
-    return (andConditions === null || andConditions === void 0 ? void 0 : andConditions.length) > 0 ? { AND: andConditions } : {};
+    // Return constructed conditions or an empty object
+    return andConditions.length > 0 ? { AND: andConditions } : {};
 };
 exports.GetWhereConditions = GetWhereConditions;

@@ -4,7 +4,7 @@ A production-ready Node.js and Express starter kit with TypeScript support,
 designed to kickstart your backend development with best practices and modern
 tooling.
 
-[![npm version](https://img.shields.io/npm/v/ah-starter-kit.svg)](https://www.npmjs.com/package/ah-starter-kit)
+[![npm version](https://img.shields.io/npm/v/NodeNest.svg)](https://www.npmjs.com/package/NodeNest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue)](https://www.typescriptlang.org/)
 [![Express](https://img.shields.io/badge/Express-4.18-green)](https://expressjs.com/)
@@ -27,10 +27,10 @@ tooling.
 
 ```bash
 # Using npx (recommended)
-npx create-ah-starter my-app
+npx create-node-nest-kit my-app
 
 # Or using npm
-npm init ah-starter my-app
+npm init node-nest-kit my-app
 
 cd my-app
 npm install

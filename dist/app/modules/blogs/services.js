@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.BlogServices = void 0;
 // get
 const get_all_blogs = (filers, pagination_data) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log({ filers, pagination_data });
     return {
         meta: {
             page: 1,
@@ -24,16 +25,19 @@ const get_all_blogs = (filers, pagination_data) => __awaiter(void 0, void 0, voi
 });
 // Post
 const create_new_blog = (blog_data) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log(blog_data);
     // Image checking
     return null;
 });
 // patch
 const edit_blog = (blog_id, blog_data) => __awaiter(void 0, void 0, void 0, function* () {
     // blog   checking
+    console.log({ blog_data, blog_id });
     return null;
 });
 // delete
 const delete_blog = (blog_id) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log({ blog_id });
     return null;
 });
 exports.BlogServices = {

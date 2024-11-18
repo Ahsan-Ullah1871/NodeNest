@@ -4,7 +4,7 @@ import config from "./config/index";
 // getting-started.js
 import { Server } from "http";
 
-process.on("uncaughtException", (error) => {
+process.on("uncaughtException", () => {
 	process.exit(1);
 });
 

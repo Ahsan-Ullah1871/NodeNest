@@ -1,5 +1,5 @@
 {
-    "name": "ah-starter-kit",
+    "name": "node-nest-kit",
     "version": "1.0.0",
     "description": "A Node.js and Express starter kit with TypeScript.",
     "main": "dist/index.js",
@@ -13,7 +13,7 @@
         "lint:fix": "eslint --fix",
         "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
         "lint-prettier": "yarn lint:check && yarn prettier:check",
-        "build": "tsc",
+        "build": "tsc && chmod +x dist/index.js",
         "prepare": "npm run build",
         "prepublishOnly": "npm run lint:check",
         "preversion": "npm run lint:check",
@@ -21,7 +21,7 @@
         "postversion": "git push && git push --tags"
     },
     "bin": {
-        "create-ah-starter": "./dist/index.js"
+        "create-node-nest-kit": "./dist/index.js"
     },
     "repository": {
         "type": "git",
