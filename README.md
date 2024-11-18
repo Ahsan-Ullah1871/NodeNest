@@ -1,4 +1,4 @@
-# AH Starter Kit 🚀
+# NodeNest 🚀
 
 A production-ready Node.js and Express starter kit with TypeScript support,
 designed to kickstart your backend development with best practices and modern
@@ -209,8 +209,9 @@ for details.
 Ahsanullah - [GitHub](https://github.com/Ahsan-Ullah1871)
 
 Project Link:
-[https://github.com/Ahsan-Ullah1871/ah-starter-kit](https://github.com/Ahsan-Ullah1871/ah-starter-kit)
+[https://github.com/Ahsan-Ullah1871/NodeNest](https://github.com/Ahsan-Ullah1871/NodeNest)
 
 ---
 
 Made with ❤️ by Ahsanullah
+
